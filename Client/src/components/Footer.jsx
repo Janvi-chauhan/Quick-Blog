@@ -9,9 +9,7 @@ const Footer = () => {
 
             <div>
                 <img src={assets.logo} alt="logo" className="w-32 sm:w-44"/>
-                <p className="max--w-[410px] mt-6">Lorem ipsum dolor sit amet 
-                    consectetur, adipisicing elit. Rerum unde quaeret eveniet 
-                    cumque accusamus atque qui error quo enim fugiat?</p>
+                <p className="max--w-[410px] mt-6">*QuickBlog* is a smart and engaging platform where you can easily explore blogs, read interesting content, and share your thoughts through comments. It offers a fast, simple, and modern blogging experience—helping you stay connected anytime, anywhere.</p>
             </div>
             <div className="flex flex-wrap justify-between w-full md:w-[45%] gap-5">
                 {footer_data.map((section,index)=> (

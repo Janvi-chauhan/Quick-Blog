@@ -2,7 +2,7 @@ import React from "react";
 import { assets } from "../../assets/assets.js";
 import { useAppContext } from "../../context/AppContext.jsx";
 import toast from "react-hot-toast";
-const CommentTableItem = ({comment, fetchComments}) => {
+    const CommentTableItem = ({comment, fetchComments}) => {
 
     const { blog, createdAt, _id } = comment;
     const BlogDate = new Date(createdAt);
@@ -60,8 +60,7 @@ const CommentTableItem = ({comment, fetchComments}) => {
                     <div className="inline-flex items-center gap-4">
                        { !comment.isApproved ? 
                        <img onClick={approveComment} src={assets.tick_icon} alt="" className="w-5 hover:scale-110 transition-all cursor-pointer" /> 
-                       : <p className="text-xs border border-green-600 bg-green-100 text-green-600 rounded-full px-3
-                         py-1">Approved</p>
+                       : <p className="text-xs border border-green-600 bg-green-100 text-green-600 rounded-full px-3 py-1">Approved</p>
                         }
                         <img onClick={deleteComment} src={assets.bin_icon} alt="" className="w-5 hover:scale-110 transition-all cursor-pointer" />
 
